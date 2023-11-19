@@ -1,6 +1,7 @@
 import org.gradle.api.artifacts.Dependency
 import org.gradle.api.artifacts.ProjectDependency
 import org.gradle.api.artifacts.dsl.DependencyHandler
+import org.gradle.kotlin.dsl.DependencyHandlerScope
 
 fun DependencyHandler.fragment() {
     implementation(Library.ANDROIDX_FRAGMENT)
@@ -9,6 +10,9 @@ fun DependencyHandler.fragment() {
 
 fun DependencyHandler.materialDesign() {
     implementation(Library.ANDROID_MATERIAL)
+}
+
+fun DependencyHandler.fullMaterialDesign() {
     implementation(Library.SWIPE_TO_REFRESH)
     implementation(Library.PAGE_INDICATOR)
 }
@@ -47,7 +51,11 @@ fun DependencyHandler.youtubePlayer() {
     implementation(Library.YOUTUBE_PLAYER)
 }
 
-
+fun DependencyHandler.testsImplementation() {
+    testimplementation(Library.JUNIT)
+    androidTestImplementation(Library.JUNIT_EXT)
+    androidTestImplementation(Library.EXPRESSO)
+}
 
 
 fun DependencyHandler.coreBase() {
@@ -138,6 +146,12 @@ fun DependencyHandler.implementationModule(moduleName: String) {
 
 private fun DependencyHandler.implementation(dependencyNotation: Any): Dependency? =
     add("implementation", dependencyNotation)
+
+private fun DependencyHandler.testimplementation(dependencyNotation: Any): Dependency? =
+    add("testImplementation", dependencyNotation)
+
+private fun DependencyHandler.androidTestImplementation(dependencyNotation: Any): Dependency? =
+    add("androidTestImplementation", dependencyNotation)
 
 private fun DependencyHandler.kapt(dependencyNotation: Any): Dependency? =
     add("kapt", dependencyNotation)

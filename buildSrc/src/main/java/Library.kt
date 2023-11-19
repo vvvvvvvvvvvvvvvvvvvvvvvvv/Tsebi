@@ -86,4 +86,10 @@ object Library {
     const val JODA = "net.danlew:android.joda:${Version.JODA}"
 
     const val RECYCLER_TIMELINE_VIEW = "com.github.vipulasri:timelineview:${Version.RECYCLER_TIMELINE_VIEW}"
+
+    const val JUNIT = "junit:junit:${Version.JUNIT}"
+
+    const val JUNIT_EXT = "androidx.test.ext:junit:${Version.JUNIT_EXT}"
+
+    const val EXPRESSO = "androidx.test.espresso:espresso-core:${Version.EXPRESSO}"
 }
