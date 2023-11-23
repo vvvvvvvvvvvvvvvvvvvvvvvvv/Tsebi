@@ -4,14 +4,14 @@ object Version {
     const val KOTLIN = "1.4.32"
 
     const val ANDROIDX = "1.1.0"
-    const val ANDROIDX_CORE = "1.2.0"
-    const val ANDROIDX_APPCOMPAT = "1.0.2"
+    const val ANDROIDX_CORE = "1.9.0"
+    const val ANDROIDX_APPCOMPAT = "1.6.1"
     const val ANDROIDX_CONSTRAINT = "2.0.0-beta4"
     const val ANDROIDX_FRAGMENT = "1.2.1"
     const val ANDROIDX_SECURE = "1.1.0-alpha03"
     const val ANDROIDX_BIOMETRIC = "1.2.0-alpha03"
 
-    const val ANDROID_MATERIAL = "1.2.0-rc01"
+    const val ANDROID_MATERIAL = "1.10.0"
     const val SWIPE_TO_REFRESH = "1.0.0"
     const val PAGE_INDICATOR = "1.2.1"
     const val ANDROID_LIFECYCLE = "2.2.0"
@@ -69,4 +69,11 @@ object Version {
     const val JODA = "2.9.9.4"
 
     const val RECYCLER_TIMELINE_VIEW = "1.1.5"
+
+    const val JUNIT = "4.13.2"
+
+    const val JUNIT_EXT = "1.1.5"
+
+    const val EXPRESSO = "3.5.1"
+
 }
